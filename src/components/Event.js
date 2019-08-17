@@ -13,7 +13,7 @@ const Event = ({ event }) => {
             dispatch({
                 type: ADD_OPERATION_LOG,
                 description: `イベント(id=${event.id})を削除しました`,
-                operatedAt: timeCurrentIso8061
+                operatedAt: timeCurrentIso8061()
             })
         }
 
